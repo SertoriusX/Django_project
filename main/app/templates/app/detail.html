@@ -1,0 +1,15 @@
+{%extends 'app/index.html' %}
+{%block title%}
+{%endblock%}
+
+{%block content %}
+{%for card in cards%}
+<div class="card m-2" style="width: 18rem;">
+    <img class="card-img-top" src="{{card.foto}}" alt="Card image cap">
+    <div class="card-body">
+        <h1>{{card.name}}</h1>
+      <p class="card-text">{{card.brand}}</p>
+    </div>
+  </div>
+{%endfor%}
+{%endblock%}
